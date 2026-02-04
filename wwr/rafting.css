@@ -1,0 +1,147 @@
+/* === Global Styles === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #222;
+  background-color: #f8f9fa;
+}
+
+/* === Header Layout (Grid) === */
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  background-color: #006994;
+  padding: 10px 30px;
+}
+
+header .logo {
+  width: 120px;
+  height: auto;
+}
+
+/* === Navigation (Flex) === */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #004b6a;
+  border-radius: 5px;
+}
+
+/* === Hero Section === */
+.hero {
+  height: 400px;
+  background-image: url('images/worldexpeditions.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+/* === Company Article === */
+.company {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: white;
+}
+
+.company img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* === History Section (CSS Layout) === */
+.history {
+  padding: 40px;
+  background-color: #e9f5fa;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* === Adventures Section (Images Horizontal) === */
+.adventures {
+  padding: 40px;
+  text-align: center;
+  background-color: white;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+figure {
+  flex: 1 1 18%;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #006994;
+}
+
+/* === Footer === */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004b6a;
+  color: white;
+  padding: 15px 30px;
+}
+
+footer .socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
+footer .socialmedia img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+footer .socialmedia img:hover {
+  transform: scale(1.1);
+}
